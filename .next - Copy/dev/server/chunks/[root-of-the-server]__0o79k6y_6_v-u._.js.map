@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 76, "column": 0}, "map": {"version":3,"sources":["file:///D:/Code/Year2_Semester_1/Frontend%20Development/teacher%20code/src/app/api/products/[id]/route.ts"],"sourcesContent":["\r\nimport { NextRequest, NextResponse } from \"next/server\";\r\n\r\nexport async function GET(req:NextRequest,{\r\n  params\r\n}:{\r\n  params: Promise<{id:number | string}>\r\n}){\r\n\r\n  const {id} = await params;\r\n  console.log(`===> ProId: `, id)\r\n\r\n  const response = await fetch(`${process.env.DUMMY_BASE_URL}/products/${id}`);\r\n  const product = await response.json();\r\n  console.log(`===> Product: `, product);\r\n  \r\n  return NextResponse.json(product);\r\n}"],"names":["GET","req","params","id","console","log","response","fetch","process","env","DUMMY_BASE_URL","product","json"],"mappings":";;;;AACA;;AAEO,eAAeA,IAAIC,GAAe,EAAC,EACxCC,MAAM,EAGP;IAEC,MAAM,EAACC,EAAE,EAAC,GAAG,MAAMD;IACnBE,QAAQC,GAAG,CAAC,CAAC,YAAY,CAAC,EAAEF;IAE5B,MAAMG,WAAW,MAAMC,MAAM,GAAGC,QAAQC,GAAG,CAACC,cAAc,CAAC,UAAU,EAAEP,IAAI;IAC3E,MAAMQ,UAAU,MAAML,SAASM,IAAI;IACnCR,QAAQC,GAAG,CAAC,CAAC,cAAc,CAAC,EAAEM;IAE9B,OAAO,gJAAY,CAACC,IAAI,CAACD;AAC3B"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Code/Year2_Semester_1/Frontend%20Development/teacher%20code/src/app/@modal/default.tsx"],"sourcesContent":["\r\n\r\n\r\n\r\nexport default function DefaultModal() {\r\n  return null;\r\n}\r\n"],"names":["DefaultModal"],"mappings":";;;;AAIe,SAASA;IACtB,OAAO;AACT"}}]
+}
